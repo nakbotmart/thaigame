@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.header-box {
+    background-color: #555555;
+    padding: 12px 70px;
+    border-radius: 12px;
+}
+
+.header-box h1 {
+    color: #ffcc66;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+
+.list-container {
+    background-color: #555555;
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-item {
+    background-color: #f3f1ea;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 30px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    flex: 1;
+}
+
+.score-add {
+    color: #99cc66; 
+    font-weight: bold;
+    font-size: 1.4rem;
+    flex: 1;
+    text-align: center;
+}
+
+.total-pst {
+    font-weight: bold;
+    font-size: 1.4rem;
+    flex: 1;
+    text-align: right;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #555555;
+    border: none;
+    width: 130px;
+    height: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.arrow-icon {
+    width: 0; 
+    height: 0; 
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 28px solid #ffcc66;
+    position: relative;
+    left: 8px;
+}
+
+.arrow-icon::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    background-color: #ffcc66;
+    left: -42px;
+    top: -9px;
+}
+
+.pause-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.pause-icon::before,
+.pause-icon::after {
+    content: '';
+    width: 14px;
+    height: 42px;
+    background-color: #ffcc66;
+    border-radius: 3px;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* พื้นหลังสีเทาอ่อน */
+    background-color: #9da1a5; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.card {
+    /* กล่องสีเทาเข้ม */
+    background-color: #555555;
+    padding: 60px 100px;
+    border-radius: 40px; /* ขอบมน */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* เงาจางๆ ให้ดูมีมิติ */
+}
+
+h1 {
+    /* ตัวอักษรสีเหลืองส้ม */
+    color: #f6c26b;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
